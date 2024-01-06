@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using NetProjectCommerceWeb.Models;
+using BookBazaar.Models;
 using System.Diagnostics;
 
-namespace NetProjectCommerceWeb.Controllers
+namespace BookBazaar.Controllers
 {
     public class HomeController : Controller
     {
