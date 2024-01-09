@@ -8,7 +8,8 @@ namespace BookBazaar.DataAccess.Repository.IRepository
 {
     public interface IUnitOfWork
     {
-        ICategoryRepository CategoryRepository { get; }
+        ICategoryRepository Category { get; }
+        IProductRepository Product { get; }
 
         void Save();
     }

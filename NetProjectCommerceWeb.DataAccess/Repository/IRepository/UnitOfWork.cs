@@ -11,13 +11,15 @@ namespace BookBazaar.DataAccess.Repository.IRepository
     {
 
         private ApplicationDbContext _db;
-        public ICategoryRepository CategoryRepository { get; private set; }
+        public ICategoryRepository Category { get; private set; }
+        public IProductRepository Product { get; private set; }
 
 
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
-            CategoryRepository = new CategoryRepository(_db);
+            Category = new CategoryRepository(_db);
+            Product = new ProductRepository(_db);
         }
 
 
